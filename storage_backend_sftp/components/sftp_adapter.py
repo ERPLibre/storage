@@ -31,7 +31,6 @@ def sftp_mkdirs(client, path, mode=511):
 def load_ssh_key(ssh_key_buffer):
     for pkey_class in (
         paramiko.RSAKey,
-        paramiko.DSSKey,
         paramiko.ECDSAKey,
         paramiko.Ed25519Key,
     ):
